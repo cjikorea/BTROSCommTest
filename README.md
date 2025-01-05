@@ -9,7 +9,11 @@ BT ROS Comm Test
 
    2)Network
     Newwork Hub  ---- TurtuleBot3 : 192.168.31.200
-                 L----Ubuntu 20.04 : 
+                 L----Ubuntu 20.04 :
+
+   3) turtlebot3
+     roslaunch turtlebot3_bringup turtlebot3_robot.launch
+    log => link <https://www.roadcarspeed.com/ros/doc/roslaunch turt.txt>
 
 
 
