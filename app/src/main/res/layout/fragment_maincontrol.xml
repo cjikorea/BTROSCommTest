@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.MainControlFragment">
+
+    <ImageButton
+        android:id="@+id/Imagebutton_acc"
+        android:layout_width="104dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="124dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/vector_right_arrow11"
+        app:layout_constraintStart_toEndOf="@+id/imageButton_Stop"
+        app:layout_constraintTop_toBottomOf="@+id/textView_BT_Status" />
+
+    <ImageButton
+        android:id="@+id/Imagebutton_dec"
+        android:layout_width="104dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="120dp"
+
+        android:scaleType="fitCenter"
+        android:src="@drawable/vector_left_arrow"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton_Stop"
+        app:layout_constraintHorizontal_bias="0.093"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_home_bt_device" />
+
+    <Button
+        android:id="@+id/button_move_x"
+        android:layout_width="73dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="68dp"
+        android:text="Mov"
+        app:layout_constraintStart_toEndOf="@+id/button_setspeedX"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton_X_Dec" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="112dp"
+        android:text="speedZ(-1.0~1.0)"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton_X_Dec" />
+
+    <Button
+        android:id="@+id/button_setspeedX"
+        android:layout_width="70dp"
+        android:layout_height="44dp"
+        android:text="Set"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar_speedZ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.705"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton_X_Dec"
+        app:layout_constraintVertical_bias="0.636" />
+
+    <EditText
+        android:id="@+id/editTextText_speedZ"
+        android:layout_width="72dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="0.00"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/text_home_bt_device"
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/material_dynamic_neutral70"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextText_speedX"
+        android:layout_width="72dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="0.00"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton_X_Dec" />
+
+    <SeekBar
+        android:id="@+id/seekBar_speedX"
+        android:layout_width="135dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="64dp"
+        android:max="200"
+        android:min="-200"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton_X_Dec" />
+
+    <SeekBar
+        android:id="@+id/seekBar_speedZ"
+        android:layout_width="135dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="48dp"
+        android:max="100"
+        android:min="-100"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar_speedX" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="speedX(-2.0~2.0)"
+        app:layout_constraintBottom_toTopOf="@+id/editTextText_speedX"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton_X_Dec"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/button_setspeedZ"
+        android:layout_width="70dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="40dp"
+        android:text="Set "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.689"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_setspeedX" />
+
+    <TextView
+        android:id="@+id/textView_BT_Status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="@color/black"
+        android:text=" connect "
+        app:layout_constraintEnd_toEndOf="@+id/text_home_bt_device"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton_X_Acc"
+        android:layout_width="131dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="40dp"
+        android:src="@android:drawable/arrow_up_float"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_home_bt_device" />
+
+    <ImageButton
+        android:id="@+id/imageButton_X_Dec"
+        android:layout_width="131dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="16dp"
+        android:src="@android:drawable/arrow_down_float"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton_Stop" />
+
+    <ImageButton
+        android:id="@+id/imageButton_Stop"
+        style="@style/Widget.AppCompat.ImageButton"
+        android:layout_width="131dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/stop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton_X_Acc" />
+
+    <Button
+        android:id="@+id/button_move_z"
+        android:layout_width="73dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="152dp"
+        android:text="Mov"
+        app:layout_constraintStart_toEndOf="@+id/button_setspeedZ"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton_X_Dec" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

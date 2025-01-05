@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_TEST">
+
+    <fragment
+        android:id="@+id/nav_TEST"
+        android:name="com.CJI.bt_ros_comm_test.ui.device.BTCommTestFragment"
+        android:label="BT Comm. Test"
+        tools:layout="@layout/fragment_terminal" />
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.CJI.bt_ros_comm_test.ui.main.MainControlFragment"
+        android:label="Main Control"
+        tools:layout="@layout/fragment_maincontrol" />
+
+    <fragment
+        android:id="@+id/nav_device"
+        android:name="com.CJI.bt_ros_comm_test.ui.device.DeviceFragment"
+        android:label="Bluetooth Devices"
+        tools:layout="@layout/fragment_device" />
+
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.CJI.bt_ros_comm_test.ui.Info.Info"
+        android:label="Manual"
+        tools:layout="@layout/fragment_info" />
+</navigation>
