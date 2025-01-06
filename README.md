@@ -13,7 +13,6 @@ BT ROS Comm Test
 
    3) turtlebot3
      roslaunch turtlebot3_bringup turtlebot3_robot.launch
-    log => link <https://www.roadcarspeed.com/ros/doc/roslaunch turt.txt>
 
 
 
